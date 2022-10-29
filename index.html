@@ -11,7 +11,7 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Teambulding Quest(Garry Potter theme).</tw-noscript></noscript></tw-story>
 <tw-storydata name="Teambulding Quest(Garry Potter theme)" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="AA6F0A42-4100-4AC2-9510-82B30B0A2C05" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-icon {
 	display: none;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="1-way" color="orange"></tw-tag><tw-tag name="Задание" color="blue"></tw-tag><tw-tag name="Доделать" color="red"></tw-tag><tw-tag name="header" color="green"></tw-tag><tw-tag name="run" color="purple"></tw-tag><tw-passagedata pid="1" name="Начало" tags="" position="100,300" size="100,100">(set: $gameScore to 0)
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="1-way" color="orange"></tw-tag><tw-tag name="Задание" color="blue"></tw-tag><tw-tag name="Доделать" color="red"></tw-tag><tw-tag name="header" color="green"></tw-tag><tw-tag name="run" color="red"></tw-tag><tw-passagedata pid="1" name="Начало" tags="" position="100,300" size="100,100">(set: $gameScore to 0)
 (set: $gameTime to 0)
 (set: $counter to 61)
 (set: $isHGrun to false)
@@ -103,8 +103,11 @@ _rerun
 (after:60s)[
 (t8n:&quot;zoom&quot;)+(t8n-time:0.4s)(dialog:&quot;Подсказка:Салат&quot;,&quot;Ладно&quot;)
 ]
-(after:300s)[
+(after:180s)[
 (open-url:&quot;https://planetcalc.ru/1434/&quot;)
+]
+(after:300s)[
+Ответ - Авада Кедавра
 ]
 
 
@@ -515,21 +518,25 @@ width=&quot;1200&quot;
 (live: 1s)[
 	(set: $counter to it - 1) (if: $counter is 0) + (align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)[(stop:)(set: $isHGrun to false)(goto: &quot;Люк&quot;)]
 	(replace: ?amount)[$counter]]
-
 ]
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X&quot;)[[[Закончить игру-&gt;End game]]]
 
-(if: (passage:)&#39;s name is &quot;Представление босса&quot;)[\
-     (set: $playSound to false)]
-(else:)[(set: $playSound to true)]
+(if: (passage:)&#39;s name is &quot;ssaf&quot;)[\
+(set: $playSound to false)
+&lt;script&gt;
+setup.audio.pause();
+&lt;/script&gt;
+](else:)[(set: $playSound to true)]
 
 (if: $playSound)[
 &lt;script&gt;
-var audio_b= document.createElement(&#39;audio&#39;);
-audio_b.src=&#39;https://www.youtube.com/watch?v=SBqPLI0Oskc&#39;;
-audio_b.loop = false;
-audio_b.play();
+window.setup = window.setup || {};
+
+setup.audio = document.createElement(&#39;audio&#39;);
+setup.audio.src = &#39;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/music/emb.mp3&#39;;
+setup.audio.loop = true;
+setup.audio.play();
 &lt;/script&gt;
 ]</tw-passagedata><tw-passagedata pid="43" name="End game" tags="" position="550,600" size="100,100">(set: $dialogState  to (confirm: &quot;Вы точно хотите закончить игру?&quot;, &quot;Нет&quot;, &quot;Да&quot;))
 (set: _namePassage to (history:)&#39;s last)
@@ -749,7 +756,7 @@ _shake
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
-[[Далее-&gt;Попались]]</tw-passagedata><tw-passagedata pid="61" name="Начальная комната" tags="run" position="1500,475" size="100,100">Что-то не сидится шкодникам, да и задание тупое какое-то, и они решили сбежать!
+[[Далее-&gt;Попались]]</tw-passagedata><tw-passagedata pid="61" name="Начальная комната" tags="" position="1500,475" size="100,100">Что-то не сидится шкодникам, да и задание тупое какое-то, и они решили сбежать!
 Они тихонько открыли дверь и вроде никого нету..
 (t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Ребят, пошли!]
 Рон немного сомневался, но раз все идут, то и он идёт, не хотелось бы быть белой вороной в своём коллективе.
@@ -779,7 +786,7 @@ _shake
 [[5-&gt;Неправильный ответ]]
 =|=
 [[8-&gt;Правильный ответ]]
-|==|</tw-passagedata><tw-passagedata pid="63" name="Комната 1" tags="" position="1500,750" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Дамы и господа, мы сбежали! Предлагаю найти выход из школы и пойти в город - ловко придумал Гарри]
+|==|</tw-passagedata><tw-passagedata pid="63" name="Комната 1" tags="run" position="1500,750" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Дамы и господа, мы сбежали! Предлагаю найти выход из школы и пойти в город - ловко придумал Гарри]
 (after: 5s)[
 		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%93%D0%BE%D1%80%D0%BE%D0%B4.jpg&quot;
 	width=&quot;1100&quot;
@@ -795,21 +802,21 @@ _shake
 (align:&quot;==&gt;&quot;)+(box:&quot;=X&quot;)[[[Пойти в коридор справа-&gt;Правый коридор]]]
 |==|
 }
-]</tw-passagedata><tw-passagedata pid="64" name="Левый коридор" tags="" position="1300,900" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%9A%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80%20%D1%81%D0%BB%D0%B5%D0%B2%D0%B0%20%D0%BA1.jpg&quot;
+]</tw-passagedata><tw-passagedata pid="64" name="Левый коридор" tags="run" position="1300,900" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%9A%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80%20%D1%81%D0%BB%D0%B5%D0%B2%D0%B0%20%D0%BA1.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
 За углом коридора виднеется дверь
 [[Войти-&gt;Комната 2]] 
 
-</tw-passagedata><tw-passagedata pid="65" name="Правый коридор" tags="" position="1700,900" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%9A%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80%20%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%20%D0%BA1.jpg&quot;
+</tw-passagedata><tw-passagedata pid="65" name="Правый коридор" tags="run" position="1700,900" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%9A%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80%20%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%20%D0%BA1.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
 (t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Жутковато как-то...]
 Среди мрачного коридора была большая дверь
-[[Ввойти в дверь-&gt;Монстр 1]]</tw-passagedata><tw-passagedata pid="66" name="Прямой коридор" tags="" position="1500,900" size="100,100">Выбора не много, придётся идти только вперёд
-[[Далее-&gt;Комната 5]]</tw-passagedata><tw-passagedata pid="67" name="Монстр 1" tags="" position="1700,1050" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/9gachi.jpg&quot;
+[[Ввойти в дверь-&gt;Монстр 1]]</tw-passagedata><tw-passagedata pid="66" name="Прямой коридор" tags="run" position="1500,900" size="100,100">Выбора не много, придётся идти только вперёд
+[[Далее-&gt;Комната 5]]</tw-passagedata><tw-passagedata pid="67" name="Монстр 1" tags="run" position="1700,1050" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/9gachi.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
@@ -822,7 +829,7 @@ _shake
 (t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Рон, пошли!]
 [[Назад-&gt;Комната 1]]
 ]
-</tw-passagedata><tw-passagedata pid="68" name="Комната 2" tags="" position="1300,1025" size="100,100">Ничего интересного, обычная учебная комната.
+</tw-passagedata><tw-passagedata pid="68" name="Комната 2" tags="run" position="1300,1025" size="100,100">Ничего интересного, обычная учебная комната.
 		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/1classrom.jpeg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
@@ -852,18 +859,18 @@ _shake
 =|=
 (align:&quot;==&gt;&quot;)+(box:&quot;=X&quot;)[[[Пройти дальше-&gt;Портал 2]]]
 |==|
-</tw-passagedata><tw-passagedata pid="72" name="Портал 2" tags="" position="1300,1600" size="100,100">[[Пойти обратно в коридор-&gt;Коридор к3]]
-[[Ввойти в портал-&gt;Комната 5]]</tw-passagedata><tw-passagedata pid="73" name="Монстр 2" tags="" position="1475,1450" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/3outlast.jpg&quot;
+</tw-passagedata><tw-passagedata pid="72" name="Портал 2" tags="run" position="1300,1600" size="100,100">[[Пойти обратно в коридор-&gt;Коридор к3]]
+[[Ввойти в портал-&gt;Комната 5]]</tw-passagedata><tw-passagedata pid="73" name="Монстр 2" tags="run" position="1475,1450" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/3outlast.jpg&quot;
 	width=&quot;500&quot;
 	height=&quot;500&quot;
 &gt;
 Так, не сюда.
-[[Назад-&gt;Коридор к3]]</tw-passagedata><tw-passagedata pid="74" name="Комната 4" tags="" position="1100,1450" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/4janych.jpg&quot;
+[[Назад-&gt;Коридор к3]]</tw-passagedata><tw-passagedata pid="74" name="Комната 4" tags="run" position="1100,1450" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/4janych.jpg&quot;
 	width=&quot;500&quot;
 	height=&quot;500&quot;
 &gt;
 Хм, и когда тут успел Янукович побывать...
-[[Осмотреться ещё-&gt;Коридор к3]]</tw-passagedata><tw-passagedata pid="75" name="Комната 5" tags="" position="1500,1050" size="100,100">Тут ничего особого нету, придётся вернутся
+[[Осмотреться ещё-&gt;Коридор к3]]</tw-passagedata><tw-passagedata pid="75" name="Комната 5" tags="run" position="1500,1050" size="100,100">Тут ничего особого нету, придётся вернутся
 [[Назад-&gt;Комната 1]]</tw-passagedata><tw-passagedata pid="76" name="Старик с кодом" tags="" position="4100,1150" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Добрый вечерок, детишки - сказал старик]
 Ребята страшно шуганулись грубого голоса деда
 Возле него стояла дверь, за которой был заключен ваш старый товарищ Билли
