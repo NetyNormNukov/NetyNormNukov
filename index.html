@@ -13,7 +13,7 @@
 	display: none;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="1-way" color="orange"></tw-tag><tw-tag name="Задание" color="blue"></tw-tag><tw-tag name="Доделать" color="red"></tw-tag><tw-tag name="header" color="green"></tw-tag><tw-tag name="run" color="purple"></tw-tag><tw-passagedata pid="1" name="Начало" tags="" position="100,300" size="100,100">(set: $gameScore to 0)
 (set: $gameTime to 0)
-(set: $counter to 80)
+(set: $counter to 61)
 (set: $isHGrun to false)
 Привет) Ты попал на квест созданный для тимбилдинга Android отдела.
 Играй, веселись, делись эмоциями и хорошо проводи время☺️. Жду meeting minutes по окончанию квеста...
@@ -54,27 +54,26 @@ _rerun
 На далеком и забытом острове проходит обучение позабытому исскуству магии.
 Неквалифицированые маги-самоучки никогда не ценились на галерах, так как их уровень магии позволял делать относительно простые вещи. Но всё же магия всегда была востребованой в современном мире.
 (click: &quot;востребованой&quot;)[
-&lt;img src=&quot;https://www.meme-arsenal.com/memes/6f79a71865e3f2f89defb9b21e6d97fe.jpg&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/1petux.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;500&quot;
 &gt;
-]
-&lt;img src=&quot;https://bigpicture.ru/wp-content/uploads/2016/04/Wizarding_World_of_Harry_Potter_Castle1-800x541.jpg&quot;
-	width=&quot;1100&quot;
-    height=&quot;500&quot;
+Прекрасная коллегия магов, тут очень пристижно учится.
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/2castle.jpg&quot;
+	width=&quot;1200&quot;
+    height=&quot;812&quot;
 &gt; 
-
-
-[[Далее-&gt;Урок]]</tw-passagedata><tw-passagedata pid="4" name="Урок" tags="Доделать" position="550,300" size="100,100">Компания друзей шалунишек всегда любила проказничать на уроке зельеварения.
+[[Далее-&gt;Урок]]
+]</tw-passagedata><tw-passagedata pid="4" name="Урок" tags="Доделать" position="550,300" size="100,100">Компания друзей шалунишек всегда любила проказничать на уроке зельеварения.
 (click: &quot;проказничать&quot;)[
-&lt;img src=&quot;https://b1.filmpro.ru/c/513322.1200xp.jpg&quot;
-	width=&quot;1100&quot;
-	height=&quot;800&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/3metamphin.jpg&quot;
+	width=&quot;1200&quot;
+	height=&quot;892&quot;
 &gt;
 Но в этот раз была особо строгая учительница мисис Ольвен
 ]
 (click: &quot;Ольвен&quot;)[
-&lt;img src=&quot;/home/roman/Documents/res/Olena.jpg&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/Olena.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;800&quot;
 &gt;
@@ -88,11 +87,11 @@ _rerun
 
 
 </tw-passagedata><tw-passagedata pid="5" name="Шальные разговорчики" tags="Задание" position="700,300" size="100,100">(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XX=&quot;)+ (text-colour:blue)[Загадка от Жака Фреско, на разгадку 30 секунд]
-Товарищ прислал вам записку с следующим содержанием:(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XX=&quot;)[В Евттк Срффжт нрч]
+Товарищ прислал вам записку с следующим содержанием:(align:&quot;&lt;==&gt;&quot;)+(box:&quot;=XX=&quot;)[Бгбеб Лёебгсб]
 Изначальное послание:
 (input: bind _spell)
 (live: 0.2s)[
-(if: _spell is &quot;А Гарри Поттер лох&quot;)[(stop:)(link-goto: &quot;Далее&quot;, &quot;Шалость удалась&quot;)]
+(if: _spell is &quot;Авада Кедавра&quot;)[(stop:)(link-goto: &quot;Далее&quot;, &quot;Шалость удалась&quot;)]
 ]
 {
 (set: $counter to 30)
@@ -126,38 +125,38 @@ _rerun
 {
 (live: 0.6s)[
 (set: _combination to _firstDigit + _secondDigit + _thirdDigit)
-(if: _combination is &quot;911&quot;)[Отлично! Замок открыт (stop:)[[Далее-&gt;Освобождение]].]
+(if: _combination is &quot;345&quot;)[Отлично! Замок открыт (stop:)[[Далее-&gt;Освобождение]].]
 ]
 }</tw-passagedata><tw-passagedata pid="7" name="Шалость удалась" tags="Доделать" position="875,300" size="100,100">Ха-ха! Шалость удалась, и ребятня продолжила страдать фигней и обмениватся записками)
 Но случилось кое-что ужасное...
 (click: &quot;ужасное...&quot;)[
-&lt;img src=&quot;https://st.depositphotos.com/1027404/4863/i/600/depositphotos_48630665-stock-photo-angry-teacher-pointing-out.jpg&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/4angry.jpg&quot;
 	width=&quot;1100&quot;
-	height=&quot;800&quot;
+	height=&quot;733&quot;
 &gt;
 Мисис Ольвен заметила эти записки! И теперь мелкие бандиты пошелестели к директору...
-Звук женского крика*
+Представьте что Лена кричит, мне тоже трудно представить, но вы попытайтесь*
 ]
 [[Далее-&gt;Коридор]]
 
 
 </tw-passagedata><tw-passagedata pid="8" name="Коридор" tags="" position="1050,300" size="100,100">Привычные стены коридора вдруг стали пугающими...
 (click: &quot;пугающими&quot;)[
-&lt;img src=&quot;https://images.deal.by/53246519_w640_h640_kraska-emal-golubaya.jpg&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/5koridor.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;800&quot;
 &gt;
 На стенах видны портреты
 ]
 (click: &quot;портреты&quot;)[
-&lt;img src=&quot;/home/roman/Documents/res/Лучшие преподавтели.png&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/best.png&quot;
 	width=&quot;1100&quot;
 	height=&quot;800&quot;
 &gt;
 В углу висит портрет особо разыскиваемых преступников
 ]
 (click: &quot;углу&quot;)[
-&lt;img src=&quot;/home/roman/Documents/res/Опасаться.png&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/scarySlava.png&quot;
 	width=&quot;1100&quot;
 	height=&quot;800&quot;
 &gt;
@@ -165,14 +164,14 @@ _rerun
 ]
 </tw-passagedata><tw-passagedata pid="9" name="Освобождение" tags="" position="4100,1700" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Ребят, большое спасибо, я думал мне уже всё]
 (after:3s)[
-&lt;img src=&quot;https://cs5.pikabu.ru/images/big_size_comm/2014-04_2/13970450865078.jpg&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/21thanks.jpeg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
 [[Далее-&gt;Дорога домой]]
 ]</tw-passagedata><tw-passagedata pid="10" name="Кабинет директора" tags="" position="1200,300" size="100,100">За большим столом сидел директор всего Хогвартса
 (click: &quot;директор&quot;)[
-		&lt;img src=&quot;https://cdn7.dissolve.com/p/D1061_6_361/D1061_6_361_1200.jpg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/6.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
@@ -182,19 +181,18 @@ _rerun
 (t8n: &quot;slide-right&quot;)+(t8n-delay:9s)[Я уже даже не знаю что с ними делать... - проговорил с грустью в голосе]
 (align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)+(t8n: &quot;fade-left&quot;)+(t8n-delay:12s)[Хватит с ними возиться! Их необходимо исключить, ведь их способности могут разрушить школу в сочетании с их шалостями]
 (after:15s)[
-		&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Drn5BPL4-yLK0AfOcz8t_4s3vUsAWiDcYA&amp;usqp=CAU&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/7objection.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
 (after:15s)[(scroll:?page, 1)]
 ]
-(t8n: &quot;slide-right&quot;)+(t8n-delay:17s)[Мисис Ольвен, я думаю вы слегка погорячились, я думаю им надо дать шанс исправится - **драматическая пауза** - в комнате для наказаний]
+(t8n: &quot;slide-right&quot;)+(t8n-delay:17s)[Objection! Мисис Ольвен, я думаю вы слегка погорячились, я думаю им надо дать шанс исправится - **драматическая пауза** - в комнате для наказаний]
 (after:22s)[
-		&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Drn5BPL4-yLK0AfOcz8t_4s3vUsAWiDcYA&amp;usqp=CAU&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/RostBoss.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
-Тут вообще хотелось бы роста за столом сидящем с ехидной улыбкой, или джокера за столом и прифотошопить лицо, только чтобы было видно характерные черты джокера
 (scroll:?page, 1)
 ]
 (after:24s)[Ребята испугались, так как не были готовы к такому повороту событий...]
@@ -219,12 +217,11 @@ _rerun
 
 </tw-passagedata><tw-passagedata pid="12" name="Комната наказаний" tags="" position="1350,300" size="100,100">Драчунов отвели по всё тому же коридору в комнату наказаний.
 (click:&quot;комнату наказаний&quot;)[
-		&lt;img src=&quot;https://abrakadabra.fun/uploads/posts/2022-03/1646183368_10-abrakadabra-fun-p-oboi-iz-domika-svinki-peppi-11.jpg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/8peppa.jpg&quot;
 	width=&quot;1100&quot;
-	height=&quot;700&quot;
+	height=&quot;532&quot;
 &gt;
 (after: 2s)[Так, милюзга, у вас наказание. Вы должны понять как варится это зелье
-Тут думал картинку с ужасным легаси кодом
 ]
 (after: 20s)[(goto: &quot;Начальная комната&quot;)]
 ]</tw-passagedata><tw-passagedata pid="13" name="Директор дает задание" tags="" position="1500,300" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Малышня - сказал Дамблрост - вы можете избежать наказания]
@@ -250,33 +247,33 @@ _rerun
 
 </tw-passagedata><tw-passagedata pid="15" name="Провожают в путь" tags="" position="1800,300" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Ну, с богом ребятишки - промолвил Дамблрост напоследок - и запомните, вдруг-чего, есть уникальное заклинание помогающее от всех бед]
 (after: 5s)[
-	&lt;img src=&quot;/home/roman/Documents/res/Работай как надо.jpg&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/workHard.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
 [[Далее-&gt;Первые шаги]]
 ]</tw-passagedata><tw-passagedata pid="16" name="Первые шаги" tags="" position="1950,300" size="100,100">Далекий путь ждал путников, ведь дорога до леса Хеймндана усыпана извилистыми дорогами. Но это также повод посмотреть на прекрасные виды Винтельхейма и вспомнить былое чувство беззаботного детства
-	&lt;img src=&quot;https://damion.club/uploads/posts/2021-12/1640606845_16-damion-club-p-izvilistaya-tropinka-v-gorakh-priroda-20.jpg&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/11natureScaly.jpg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
 (after: 3s)[
 Прекрасная погодка выдалась в этот день, горные хребты красовались своим манящим великолепием, кристально голубое небо простиралось за горизонт, а за ним неизведаные земли, с морями, океанами, и милионами других волшебников, которые жаждут приключений. 
-	&lt;img src=&quot;https://www.advantour.com/img/kazakhstan/mountains/tien-shan.jpg&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/12natureGory.jpg&quot;
 width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
 ]
 Ребята уже давно решили, что после выпуска школы они будут странствовать по Земле, всё той же компанией старых добрых друзей. Они всегда хотели посетить магов Друидов, которые обитают на волшебных землях Хьялмарк ,чтобы посмотреть на их навыки магии древных, и возможно начать обучение в величественной колегии магов Масиаф
 (click: &quot;Масиаф&quot;)[
-	&lt;img src=&quot;https://media.moddb.com/images/mods/1/26/25198/masyafoverhaul.jpg&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/12Masiaf.jpg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
 Конечно всё это далекие мечты, но как сладостно они звучат.
 (t8n: &quot;slide-right&quot;)+(t8n-delay:3s)[Гарри, смотри, я нашёл возле камня записку, она адресована тебе]&lt;note|
 (click: ?note)[
-	&lt;img src=&quot;/home/roman/Documents/res/Лох.jpg&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/lox.jpg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
@@ -288,14 +285,13 @@ width=&quot;1200&quot;
 ]
 
 
-</tw-passagedata><tw-passagedata pid="17" name="Мумий троль" tags="" position="2100,300" size="100,100">Тропа становилась всё уже, ребятня проходила горный масив.
+</tw-passagedata><tw-passagedata pid="17" name="Мумий троль" tags="" position="2125,300" size="100,100">Тропа становилась всё уже, ребятня проходила горный масив.
 И вот после очередного подьема они увидели это
 (click: &quot;это&quot;)[
-	&lt;img src=&quot;https://static.wikia.nocookie.net/elderscrolls/images/2/2b/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D0%BD_Giant_003.png/revision/latest/scale-to-width-down/243?cb=20130831150924&amp;path-prefix=ru&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/troll.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
-Тут картинка троля среди горного хребта красивого, горный хребет потому что нельзя обойти
 (t8n: &quot;slide-right&quot;)+(t8n-delay:6s)[
 Уууг, проход закрыт мумий-тролем - сказало чудище
 (after: 10s)[[[Далее-&gt;Бой с тролем]]]
@@ -303,12 +299,10 @@ width=&quot;1200&quot;
 ]</tw-passagedata><tw-passagedata pid="18" name="Бой с тролем" tags="" position="2300,300" size="100,100">(if: visits is 1)[
 (t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Вам тут не место,  убирайтесь]
 ]
-&lt;img src=&quot;&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/troll.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
-&gt; Тут картинка троля та же
-Вы решаете бороться с тролем, ваши действия?
-
+&gt; 
 =|=
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[(button:)[[[Пройти-&gt;Пасивный вариант]]]]
 =|=
@@ -330,10 +324,10 @@ width=&quot;1200&quot;
 [[Положить обратно в рюкзак-&gt;Бой с тролем]]</tw-passagedata><tw-passagedata pid="22" name="Связаться с Дамблростом троль" tags="" position="2400,25" size="100,100">Вы решаете использовать ракушку.
 На ней есть какая-то кнопка
 (click:&quot;кнопка&quot;)[
-&lt;img src=&quot;&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/rak.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
-&gt;
+&gt;Кнопка на ракушке
 Вы нажимаете на неё в ожидании чуда
 Звуки гудков*
 (t8n: &quot;slide-right&quot;)+(t8n-delay:5s)[
@@ -366,7 +360,7 @@ width=&quot;1200&quot;
 
 </tw-passagedata><tw-passagedata pid="26" name="Пасивный вариант разговора троль" tags="" position="2575,475" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Ха-ха-ха, только если хотите умереть]
 (after: 3s)[[[Ладно, подумаем ещё-&gt;Меню разговора с тролем]]]</tw-passagedata><tw-passagedata pid="27" name="Агресивный вариант разговора троль" tags="" position="2575,150" size="100,100">(if: visits is 2)[
-Вы ссыкуете сказать это или что-то подобное, так что лучше пожалуй подумать ещё
+Вы ссыкуете сказать что-то на подобие прошлой речи, так что лучше, пожалуй, подумать ещё
 (after: 3s)[(redirect:&quot;Меню разговора с тролем&quot;)]
 ]
 (else:)[
@@ -376,56 +370,54 @@ width=&quot;1200&quot;
 ]
 
 ]
-</tw-passagedata><tw-passagedata pid="28" name="Песня моя невеста" tags="" position="2750,300" size="100,100">Как же мне с тобой повезло - оу -  моей невесте!
-	&lt;img src=&quot;https://static.wikia.nocookie.net/elderscrolls/images/2/2b/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B0%D0%BD_Giant_003.png/revision/latest/scale-to-width-down/243?cb=20130831150924&amp;path-prefix=ru&quot;
+</tw-passagedata><tw-passagedata pid="28" name="Песня моя невеста" tags="" position="2750,300" size="100,100">Как бы тебе повезло - оуууууу -  моей невесте!
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/trollLag.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
-Тут тот же троль, но с лицом лагутенко. 
 Троль растрогался и решил отойти в сторонку
-(after: 10s)[(goto: &quot;Тролль побежден&quot;)]</tw-passagedata><tw-passagedata pid="29" name="Тролль побежден" tags="" position="2925,300" size="100,100">(visited:&quot;Облететь троля&quot;)[Вы пролетели троля, он сильно разозлился, ведь у него были на вас свои планы, но вы уже драпанули куда подальше от него]
+(after: 11s)[(goto: &quot;Тролль побежден&quot;)]</tw-passagedata><tw-passagedata pid="29" name="Тролль побежден" tags="" position="2925,300" size="100,100">(visited:&quot;Облететь троля&quot;)[Вы пролетели троля, он сильно разозлился, ведь у него были на вас свои планы, но вы уже драпанули куда подальше от него]
 (visited: &quot;Песня моя невеста&quot;)[
 Штош, троль пройден, хоть и весьма странным способом, герои продолжили путь.
 ]
 (after: 3s)[[[Далее-&gt;Герои продолжают путь]]]</tw-passagedata><tw-passagedata pid="30" name="Герои продолжают путь" tags="" position="3075,300" size="100,100">После успеха над троллем хлопчики й дівчатка были довольно воодушевлены, кажется сейчас им всё по плечу!
 Впереди по тропе красовался густой лес с опавшей наземь листвой.
 (click:&quot;лес&quot;)[
-	&lt;img src=&quot;https://p4.wallpaperbetter.com/wallpaper/590/606/563/nature-landscape-forest-trees-wallpaper-preview.jpg&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/15AfterTroll.jpg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
 Как же прекрасно наблюдать за красотами лесов Хеймндана, со стороны он наводил тёплые осенние ноты тоски, нежели какие-то страшные мысли.
 [[Далее-&gt;Развилка]]
 ] </tw-passagedata><tw-passagedata pid="31" name="Красивые виды" tags="" position="2575,25" size="100,100">В воздухе намного приятнее наблюдать за красотами природы.
-	&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq0GJw7MAs5GhOBxbokQECdj3bT60gOyU6xwiiHwjzzDPtmx81ZBiLhXA_r5FRUWUKOSc&amp;usqp=CAU&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/13escapeFromTroll.jpeg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
 Воздух наполнен свободой полета и душевным вдохновлением.
 Путь героев только начался, а они уже ощущают большую привязаность друг к другу
 В воздухе намного приятнее наблюдать за красотами природы.
-	&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq0GJw7MAs5GhOBxbokQECdj3bT60gOyU6xwiiHwjzzDPtmx81ZBiLhXA_r5FRUWUKOSc&amp;usqp=CAU&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/14escapeFromTrollSecondPic.jpeg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
-&gt;Другая красивая картинка 
+&gt;
 Но тут внезапно между ног у них начало гудеть...
 Они остановились на привал
 (click: &quot;привал&quot;)[
 Сначала необходимо было разобратся что же произошло с метлами
-	&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq0GJw7MAs5GhOBxbokQECdj3bT60gOyU6xwiiHwjzzDPtmx81ZBiLhXA_r5FRUWUKOSc&amp;usqp=CAU&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/metla.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;&gt;
-Картинка с метлой с дисплеем Low Charge
 (t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Мда, ещё не было таких ситуаций, конечно - промолвил Гарри]
 Герои перекусили и продолжили путь дальше
 (after: 4s)[[[Далее-&gt;Герои продолжают путь]]]
 ]</tw-passagedata><tw-passagedata pid="32" name="Развилка" tags="" position="3225,300" size="100,100">(if: visits is 1)[
 Среди опавшей листвы из-за бугорка начал вылазить камень, и возле него чётко просматривалась развилка путей. Герои подошли ближе
 (click: &quot;ближе&quot;)[
-		&lt;img src=&quot;https://p4.wallpaperbetter.com/wallpaper/590/606/563/nature-landscape-forest-trees-wallpaper-preview.jpg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/rock.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
-&gt;тут картинка камня с развилкой, на камне что-то типа прямо пойдешь - смерть сыщешь, налево пойдешь, ну и так дале...
+&gt;
 Куда же пойдут эти сорванцы?
 =|=
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[(button:)[[[Налево-&gt;Налево]]]]
@@ -436,10 +428,9 @@ width=&quot;1200&quot;
 |==|
 ]
 ](else:)[
-		&lt;img src=&quot;https://p4.wallpaperbetter.com/wallpaper/590/606/563/nature-landscape-forest-trees-wallpaper-preview.jpg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/rock.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;&gt;
-Та же картинка с развилкой.
 Куда же подадутся любители приключений в этот раз?
 =|=
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[(button:)[[[Налево-&gt;Налево]]]]
@@ -459,13 +450,13 @@ width=&quot;1200&quot;
 Если мы шли прямо, то мы будем идти прямо!
 По крайней мере им так казалось...
 Пройдя чуть дальше по тропе лес начал неуютно сгущатся и всем своим видом намекать что лучше пойти обратно, но трусов никто не признает! 
-		&lt;img src=&quot;https://damion.club/uploads/posts/2022-02/1645169112_3-damion-club-p-les-temnii-strashnii-priroda-4.jpg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/16pathToBoss.jpg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;&gt;
 [[Задрать паруса!-&gt;Предупреждение]]
 [[Выбрать другой путь-&gt;Развилка]]
 ] (else:)[
-		&lt;img src=&quot;https://damion.club/uploads/posts/2022-02/1645169112_3-damion-club-p-les-temnii-strashnii-priroda-4.jpg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/16pathToBoss.jpg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;&gt;
 [[Дальше-&gt;Предупреждение]]
@@ -477,15 +468,14 @@ width=&quot;1200&quot;
 </tw-passagedata><tw-passagedata pid="35" name="Направо" tags="" position="3475,600" size="100,100">Кажется тут нечего делать, дорога перекрыта
 [[Назад-&gt;Развилка]]</tw-passagedata><tw-passagedata pid="36" name="Предупреждение" tags="" position="3575,300" size="100,100">(if: visits is 1)[
 Лес всё больше походил на ужасную сказку, в которой никто не хотел учавствовать	
-&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTARkcTWkDQ7W_HBdnQcFOddpJ5zb_Nn8ReGQ&amp;usqp=CAU&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/0scaryForest.jpeg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;&gt;
-На одном дереве висело что-то рукотворное, герои решили взглянуть
+На одном дереве справа висело что-то рукотворное, герои решили взглянуть
 (click:&quot;взглянуть&quot;)[
-	&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTARkcTWkDQ7W_HBdnQcFOddpJ5zb_Nn8ReGQ&amp;usqp=CAU&quot;
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/forestWithTable.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;&gt;
-тут табличка с надписью что-то вроде &quot;Уходите, если хотите жить&quot;
 Но есть маленький свет в конце тонеля!
 Прямо за этой табличкой была еле натоптанная тропа с более светлой частью леса, и тут герои призадумались, а что же делать дальше...
 =|=
@@ -503,9 +493,9 @@ width=&quot;1200&quot;
 
 </tw-passagedata><tw-passagedata pid="37" name="Путь к главному боссу" tags="" position="3750,300" size="100,100">(set: $dialogState  to (confirm: &quot;Вы точно хотите продолжить путь?&quot;, &quot;Нет&quot;, &quot;Да&quot;))
 (if: $dialogState)[
-[[Далее-&gt;Представление босса]]
+(goto: &quot;Бой с боссом&quot;)
 ](else:)[
-[[Пойти назад с позором-&gt;Развилка]]
+(goto: &quot;Развилка&quot;)
 ]</tw-passagedata><tw-passagedata pid="38" name="Пойти на сокращение" tags="" position="3575,150" size="100,100">(if: $isShortcut1 is true)[
 [[Пройти к тропе с ведьмой-&gt;Срез к ведьме]]
 ]
@@ -519,10 +509,7 @@ width=&quot;1200&quot;
 (else:)[
 Крона деревьев прикрывает дальнейший путь, но за ним виден свет, надо запомнить это место.
 [[Назад-&gt;Предупреждение]]
-]</tw-passagedata><tw-passagedata pid="39" name="Срез к ведьме" tags="" position="2925,1300" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="Cрез к старику" tags="" position="3625,1300" size="100,100"></tw-passagedata><tw-passagedata pid="41" name="Представление босса" tags="" position="3900,300" size="100,100">Красивый видос на ютубе, надо приатачить звук к видео, очень хочется в такт музыки, буду искать
-(after: 20s)[
-[[Далее-&gt;Бой с боссом]]
-]</tw-passagedata><tw-passagedata pid="42" name="footer" tags="footer" position="550,475" size="100,100">(if: $isHGrun is true)[
+]</tw-passagedata><tw-passagedata pid="39" name="Срез к ведьме" tags="" position="2925,1300" size="100,100"></tw-passagedata><tw-passagedata pid="40" name="Cрез к старику" tags="" position="3625,1300" size="100,100"></tw-passagedata><tw-passagedata pid="41" name="Представление босса" tags="" position="3900,300" size="100,100">(goto: &quot;Бой с боссом&quot;)</tw-passagedata><tw-passagedata pid="42" name="footer" tags="footer" position="550,475" size="100,100">(if: $isHGrun is true)[
 
 (align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)[Хагрид найдёт вас через |amount&gt;[$counter] секунд]
 (live: 1s)[
@@ -533,7 +520,18 @@ width=&quot;1200&quot;
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X&quot;)[[[Закончить игру-&gt;End game]]]
 
-</tw-passagedata><tw-passagedata pid="43" name="End game" tags="" position="550,600" size="100,100">(set: $dialogState  to (confirm: &quot;Вы точно хотите закончить игру?&quot;, &quot;Нет&quot;, &quot;Да&quot;))
+(if: (passage:)&#39;s name is &quot;Представление босса&quot;)[\
+     (set: $playSound to false)]
+(else:)[(set: $playSound to true)]
+
+(if: $playSound)[
+&lt;script&gt;
+var audio_b= document.createElement(&#39;audio&#39;);
+audio_b.src=&#39;https://www.youtube.com/watch?v=SBqPLI0Oskc&#39;;
+audio_b.loop = false;
+audio_b.play();
+&lt;/script&gt;
+]</tw-passagedata><tw-passagedata pid="43" name="End game" tags="" position="550,600" size="100,100">(set: $dialogState  to (confirm: &quot;Вы точно хотите закончить игру?&quot;, &quot;Нет&quot;, &quot;Да&quot;))
 (set: _namePassage to (history:)&#39;s last)
 (if: $dialogState)[
 (goto: &quot;Законченная игра&quot;)
@@ -554,11 +552,12 @@ width=&quot;1200&quot;
 (input: bind _commandName)
 
 (click: &quot;тут&quot;)[
-На всякий случай, если не сработало, пришлите письмо на адрес oboraroman2018@gmail.com с темой &quot;Квест TB команда teamName&quot; и телом письма &quot;Мы набрали х очков&quot;
+На всякий случай, если не сработало, пришлите письмо на адрес oboraroman2018@gmail.com с темой &quot;Квест TB команда teamName&quot; и телом письма &quot;Мы набрали х очков. Мы прошли квесть за y секунд&quot;
 (set: _fullMail to (str: _mail) + (str: _commandName) + (str: _fullEndMail))
-Отладка: _fullMail
 (open-url: (str: _fullMail))
-]</tw-passagedata><tw-passagedata pid="45" name="Бой с боссом" tags="" position="4100,300" size="100,100">&lt;img src=&quot;https://i.pinimg.com/originals/fc/05/20/fc05209b1c7cce35ce6433c5221c6fe9.jpg&quot;
+]</tw-passagedata><tw-passagedata pid="45" name="Бой с боссом" tags="" position="4100,300" size="100,100">(if: visits is 1)[
+Добро пожаловать, мерзкие людишки, пожалуй я немного помучаю вас перед тем, как съесть заживо
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/16mainBoss.jpg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
@@ -569,7 +568,22 @@ width=&quot;1200&quot;
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;===XXXXXXXXXXXXXX===&quot;)[(button:)[[[Инвертарь-&gt;Инвертарь главный босс]]]]
 =|=
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X&quot;)[(button:)[[[Поговорить-&gt;Разговор с главным боссом]]]]
-|==|</tw-passagedata><tw-passagedata pid="46" name="Драка" tags="" position="4300,300" size="100,100">(if: visits is 1)[
+|==|
+]
+(else: )[
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/16mainBoss.jpg&quot;
+	width=&quot;1200&quot;
+	height=&quot;675&quot;
+&gt;
+Что вы будете делать?
+=|=
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X=&quot;)[(button:)[[[Бой!-&gt;Драка]]]]
+=|=
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;===XXXXXXXXXXXXXX===&quot;)[(button:)[[[Инвертарь-&gt;Инвертарь главный босс]]]]
+=|=
+(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;=X&quot;)[(button:)[[[Поговорить-&gt;Разговор с главным боссом]]]]
+|==|
+]</tw-passagedata><tw-passagedata pid="46" name="Драка" tags="" position="4300,300" size="100,100">(if: visits is 1)[
 Вы решили вступить в схватку с монстром.
 ] (else:)[
 (set: _text to (shuffled: &quot;Вы почти сделали мерзавца!&quot;,
@@ -685,7 +699,7 @@ _shake
 </tw-passagedata><tw-passagedata pid="51" name="Грепля" tags="" position="4450,150" size="100,100">(if: visits is 1)[
 Вы вступили в неравный бой
 (after:2s)[
-&lt;img src=&quot;https://cs12.pikabu.ru/images/big_size_comm/2022-01_6/1643154646183052244.jpg&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/17grepling.jpg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
@@ -696,46 +710,50 @@ _shake
 Вы предпочитаете не вспоминать перенесенный болезненный опыт.
 [[Подумать ещё -&gt;Драка]]
 ]</tw-passagedata><tw-passagedata pid="52" name="Мухомор главный босс" tags="" position="4100,650" size="100,100"> Вы решились на отчаянный шаг. Поделив гриб между собой вы съедаете по кусочку.
-[[Далее-&gt;Мега трип от гриба]]</tw-passagedata><tw-passagedata pid="53" name="Связаться с Дамблростом главный босс" tags="" position="4250,475" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:3s)[Алло, Дамблрост? - пшшш - У нас тут проблема - пшш- мы - пшш - монстр - кхххх- как нам быть? - кххх]
+[[Далее-&gt;Победа над боссом]]</tw-passagedata><tw-passagedata pid="53" name="Связаться с Дамблростом главный босс" tags="" position="4250,475" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:3s)[Алло, Дамблрост? - пшшш - У нас тут проблема - пшш- мы - пшш - монстр - кхххх- как нам быть? - кххх]
 (align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)+(t8n: &quot;fade-left&quot;)+(t8n-delay:6s)[Слушайте, я ничего не понял, давайте насетапим митос через 10 минут и вы мне всё подробно расскажете]
 Связи в лесу не было, да и Дамблрост забыл про митинг, классика.
 [[Применить другой инвертарь-&gt;Инвертарь главный босс]]</tw-passagedata><tw-passagedata pid="54" name="Бесполезное действие босс" tags="" position="3900,450" size="100,100">Вы попытались набросить веревку на тварь, но он схватил за неё и чуть не утянул вас, лучше приберечь её на потом.
 [[Использовать что-то другое-&gt;Инвертарь главный босс]]</tw-passagedata><tw-passagedata pid="55" name="Облететь босса" tags="" position="3900,600" size="100,100">Вы достали метлу
 (click: &quot;метлу&quot;)[
-	&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq0GJw7MAs5GhOBxbokQECdj3bT60gOyU6xwiiHwjzzDPtmx81ZBiLhXA_r5FRUWUKOSc&amp;usqp=CAU&quot;
+	&lt;img src=&quot;https://github.com/NetyNormNukov/NetyNormNukov/blob/main/metla.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;&gt;
-Картинка с метлой и дисплеем Low Charge
 Мда, похоже она разрядилась из-за холода, придётся дома зарядить уже.
 [[Подумать ещё-&gt;Инвертарь главный босс]]
 ]</tw-passagedata><tw-passagedata pid="56" name="Мега трип от гриба" tags="" position="4100,775" size="100,100">Тут нарезка всякого видео треша, есть идеи, надо только нарезать)
-[[Попустило...-&gt;Победа над боссом]]</tw-passagedata><tw-passagedata pid="57" name="Победа над боссом" tags="" position="4100,900" size="100,100">&lt;img src=&quot;https://i.ytimg.com/vi/XUTl56g8CTk/maxresdefault.jpg&quot;
+[[Попустило...-&gt;Победа над боссом]]</tw-passagedata><tw-passagedata pid="57" name="Победа над боссом" tags="" position="4100,900" size="100,100">&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/18dontEatGriby.jpg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
 Это первое о чём подумали герои.
 После такой мозговой встряски они придумали как победить босса применив старое заклинание древних двемеров.
 (click: &quot;заклинание&quot;)[
-&lt;img src=&quot;https://i.kym-cdn.com/photos/images/original/000/199/908/fus_ro_dah_by_bluetoaster-d4g5kh3.png&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/19fusRoDah.png&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
 &gt;
 Гиганский мешок с костями взмыл в воздух и был повержен падением, туше! Кажется это был единственный способ убить его.
 [[Далее-&gt;После победы]]
 ]</tw-passagedata><tw-passagedata pid="58" name="После победы" tags="" position="4100,1025" size="100,100">Тучи над небом стали рассасыватся, лес казался уже не таким страшным, и без мрака за монстром стал проглядыватся силует двери...
-[[Далее-&gt;Старик с кодом]]</tw-passagedata><tw-passagedata pid="59" name="Погоня Хагрида" tags="" position="1025,625" size="100,100">О боже! Пока школота выбиралась их пропажу заметили и начали искать. 
+[[Далее-&gt;Старик с кодом]]</tw-passagedata><tw-passagedata pid="59" name="Погоня Хагрида" tags="" position="1025,625" size="100,100">О боже! Пока школота выбиралась пропажу заметили и Хагрид начал их искать! 
 (set: $isHGrun to true)
-		&lt;img src=&quot;https://cdn7.dissolve.com/p/D1061_6_361/D1061_6_361_1200.jpg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/dime.png&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
-&gt;Тут картинка Димы Ширыхалова типа Хагрид в полный рост только лицо Димы.
+&gt;
 [[Бежать что есть мочи-&gt;Коридор к3]]
 
-</tw-passagedata><tw-passagedata pid="60" name="Люк" tags="" position="1025,775" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Скорее, сюда! - крикнул Гарри]</tw-passagedata><tw-passagedata pid="61" name="Начальная комната" tags="run" position="1500,475" size="100,100">Что-то не сидится шкодникам, да и задание тупое какое-то, и они решили сбежать!
+</tw-passagedata><tw-passagedata pid="60" name="Люк" tags="" position="1025,775" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Скорее, сюда! - крикнул Гарри]
+	&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/milos.png&quot;
+	width=&quot;1200&quot;
+	height=&quot;675&quot;
+&gt;
+[[Далее-&gt;Попались]]</tw-passagedata><tw-passagedata pid="61" name="Начальная комната" tags="run" position="1500,475" size="100,100">Что-то не сидится шкодникам, да и задание тупое какое-то, и они решили сбежать!
 Они тихонько открыли дверь и вроде никого нету..
 (t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Ребят, пошли!]
 Рон немного сомневался, но раз все идут, то и он идёт, не хотелось бы быть белой вороной в своём коллективе.
-		&lt;img src=&quot;/home/roman/Documents/res/escape/Backgrounds/Коридор с начальной комнаты.jpeg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%9A%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80%20%D1%81%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D1%8B.jpeg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
@@ -743,7 +761,7 @@ _shake
 (align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)+(t8n: &quot;fade-left&quot;)+(t8n-delay:8s)[Заткнись Рон, иначе нас заметят из-за тебя.]
 Рон ещё припомнит Гарри такую грубость.
 (t8n: &quot;slide-right&quot;)+(t8n-delay:11s)[Кажется что эти коридоры бесконечные]
-		&lt;img src=&quot;/home/roman/Documents/res/escape/Backgrounds/Коридор 2.jpg.jpeg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%9A%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80%202.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
@@ -763,7 +781,7 @@ _shake
 [[8-&gt;Правильный ответ]]
 |==|</tw-passagedata><tw-passagedata pid="63" name="Комната 1" tags="" position="1500,750" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Дамы и господа, мы сбежали! Предлагаю найти выход из школы и пойти в город - ловко придумал Гарри]
 (after: 5s)[
-		&lt;img src=&quot;/home/roman/Documents/res/escape/Backgrounds/Город.jpg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%93%D0%BE%D1%80%D0%BE%D0%B4.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
@@ -777,27 +795,27 @@ _shake
 (align:&quot;==&gt;&quot;)+(box:&quot;=X&quot;)[[[Пойти в коридор справа-&gt;Правый коридор]]]
 |==|
 }
-]</tw-passagedata><tw-passagedata pid="64" name="Левый коридор" tags="" position="1300,900" size="100,100">		&lt;img src=&quot;/home/roman/Documents/res/escape/Backgrounds/Коридор слева к1.jpg&quot;
+]</tw-passagedata><tw-passagedata pid="64" name="Левый коридор" tags="" position="1300,900" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%9A%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80%20%D1%81%D0%BB%D0%B5%D0%B2%D0%B0%20%D0%BA1.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
 За углом коридора виднеется дверь
 [[Войти-&gt;Комната 2]] 
 
-</tw-passagedata><tw-passagedata pid="65" name="Правый коридор" tags="" position="1700,900" size="100,100">		&lt;img src=&quot;/home/roman/Documents/res/escape/Backgrounds/Коридор справа к1.jpg&quot;
+</tw-passagedata><tw-passagedata pid="65" name="Правый коридор" tags="" position="1700,900" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/%D0%9A%D0%BE%D1%80%D0%B8%D0%B4%D0%BE%D1%80%20%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%B0%20%D0%BA1.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
 (t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Жутковато как-то...]
 Среди мрачного коридора была большая дверь
 [[Ввойти в дверь-&gt;Монстр 1]]</tw-passagedata><tw-passagedata pid="66" name="Прямой коридор" tags="" position="1500,900" size="100,100">Выбора не много, придётся идти только вперёд
-[[Далее-&gt;Комната 5]]</tw-passagedata><tw-passagedata pid="67" name="Монстр 1" tags="" position="1700,1050" size="100,100">		&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/ru/0/02/%D0%93%D0%B0%D1%87%D0%B8%D0%BC%D1%83%D1%87%D0%B8.jpg&quot;
+[[Далее-&gt;Комната 5]]</tw-passagedata><tw-passagedata pid="67" name="Монстр 1" tags="" position="1700,1050" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/9gachi.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
 (t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Ээээ... Простите, ошиблись дверью]
 (after: 3s)[
-		&lt;img src=&quot;https://memepedia.ru/wp-content/uploads/2017/08/%D0%BD%D0%B5-%D1%85%D0%BE%D1%87%D1%83-%D0%BD%D0%B5-%D0%B1%D1%83%D0%B4%D1%83-1.jpg&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/10ronGachi.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
@@ -805,15 +823,15 @@ _shake
 [[Назад-&gt;Комната 1]]
 ]
 </tw-passagedata><tw-passagedata pid="68" name="Комната 2" tags="" position="1300,1025" size="100,100">Ничего интересного, обычная учебная комната.
-		&lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa4QFWoklnebxMuZ7DMdoA0d6jXYL_1gzhDg&amp;usqp=CAU&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/1classrom.jpeg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
 &gt;
 [[Пройти дальше в класс-&gt;Портал 1]]</tw-passagedata><tw-passagedata pid="69" name="Портал 1" tags="run" position="1300,1150" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Оппа, а  это уже интереснее]
-		&lt;img src=&quot;https://static.wikia.nocookie.net/fable/images/0/0f/%D0%92%D0%B5%D0%B4%D1%8C%D0%BC%D0%B8%D0%BD_%D0%BF%D0%BE%D1%80%D1%82%D0%B0%D0%BB.jpg/revision/latest?cb=20160218161624&amp;path-prefix=ru&quot;
+		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/2portal.jpg&quot;
 	width=&quot;1100&quot;
 	height=&quot;700&quot;
-&gt;Тут не сильно вписывается, но хочу отсылку на fable)
+&gt;
 =|=
 (align:&quot;&lt;==&quot;)+(box:&quot;X=&quot;)[[[Ввойти в портал-&gt;Дверь 1]]]
 =|=
@@ -835,12 +853,12 @@ _shake
 (align:&quot;==&gt;&quot;)+(box:&quot;=X&quot;)[[[Пройти дальше-&gt;Портал 2]]]
 |==|
 </tw-passagedata><tw-passagedata pid="72" name="Портал 2" tags="" position="1300,1600" size="100,100">[[Пойти обратно в коридор-&gt;Коридор к3]]
-[[Ввойти в портал-&gt;Комната 5]]</tw-passagedata><tw-passagedata pid="73" name="Монстр 2" tags="" position="1475,1450" size="100,100">		&lt;img src=&quot;https://static.wikia.nocookie.net/outlast/images/4/45/%D0%9F%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6%D0%B8.jpg/revision/latest/smart/width/250/height/250?cb=20170521131843&amp;path-prefix=ru&quot;
+[[Ввойти в портал-&gt;Комната 5]]</tw-passagedata><tw-passagedata pid="73" name="Монстр 2" tags="" position="1475,1450" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/3outlast.jpg&quot;
 	width=&quot;500&quot;
 	height=&quot;500&quot;
 &gt;
-Так, им не сюда.
-[[Назад-&gt;Коридор к3]]</tw-passagedata><tw-passagedata pid="74" name="Комната 4" tags="" position="1100,1450" size="100,100">		&lt;img src=&quot;https://i.ytimg.com/vi/Wh_BoiJuhd4/hqdefault.jpg&quot;
+Так, не сюда.
+[[Назад-&gt;Коридор к3]]</tw-passagedata><tw-passagedata pid="74" name="Комната 4" tags="" position="1100,1450" size="100,100">		&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/escape/4janych.jpg&quot;
 	width=&quot;500&quot;
 	height=&quot;500&quot;
 &gt;
@@ -850,10 +868,10 @@ _shake
 Ребята страшно шуганулись грубого голоса деда
 Возле него стояла дверь, за которой был заключен ваш старый товарищ Билли
 (click: &quot;Билли&quot;)[
-&lt;img src=&quot;&quot;
+&lt;img src=&quot;https://raw.githubusercontent.com/NetyNormNukov/NetyNormNukov/main/other/20BillyHar.jpeg&quot;
 	width=&quot;1200&quot;
 	height=&quot;675&quot;
-&gt; Надо подумать
+&gt;
 (align:&quot;&lt;==&quot;)+(box:&quot;=X&quot;)+(t8n: &quot;fade-left&quot;)+(t8n-delay:3s)[Дедушка, что вы тут делаете?]
 (t8n: &quot;slide-right&quot;)+(t8n-delay:5s)[Этот проклятый гад заключил мою душу в вечные оковы для охраны его жертв за этой дверь.]
 (t8n: &quot;slide-right&quot;)+(t8n-delay:8s)[Пока я не разгадаю этот кросворд, я никак не могу освободится]
@@ -866,19 +884,11 @@ _shake
 [[Попытаться подобрать комбинацию-&gt;Открытие тайника]]
 ]
 ]</tw-passagedata><tw-passagedata pid="77" name="Разгадать кросворд" tags="" position="4025,1275" size="100,100">Какой самый крутой отдел в компании Nix?
-&lt;img src=&quot;&quot;
-	width=&quot;1200&quot;
-	height=&quot;675&quot;
-&gt;Тут картинка маленького фрагмента кросворда в которой вместиться пустое слово ANDROID.
-Писать ЗАГЛАВНЫЕ буквы:
+Писать маленькими буквами:
 (input: bind _spell)
 (live: 0.2s)[
-(if: _spell is &quot;ANDROID&quot;)[(stop:)(link-goto: &quot;Далее&quot;, &quot;Старик подсказывает&quot;)]</tw-passagedata><tw-passagedata pid="78" name="Старик подсказывает" tags="" position="4025,1400" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Спасибо ребятишки, вы мне очень помогли, код 345, удачи]
+(if: _spell is &quot;android&quot;)[(stop:)(link-goto: &quot;Далее&quot;, &quot;Старик подсказывает&quot;)]</tw-passagedata><tw-passagedata pid="78" name="Старик подсказывает" tags="" position="4025,1400" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:1s)[Спасибо ребятишки, вы мне очень помогли, код 345, удачи]
 (after:3s)[
-&lt;img src=&quot;&quot;
-	width=&quot;1200&quot;
-	height=&quot;675&quot;
-&gt;
 [[Далее-&gt;Открытие тайника]]
 ]
 </tw-passagedata><tw-passagedata pid="79" name="Безымянный параграф" tags="" position="4325,1575" size="100,100">(if: (passage:)&#39;s name is &quot;Представление босса&quot;)[\
@@ -907,7 +917,26 @@ audio_b.play();
 )\
 (print: _text&#39;s 1st)
 [[Подумать лучше-&gt;Дверь 1]]</tw-passagedata><tw-passagedata pid="82" name="Правильный ответ" tags="" position="1375,750" size="100,100">Ура! Плиты спрятались под землю и открылся проход в комнату!
-[[Далее-&gt;Комната 1]]</tw-passagedata></tw-storydata>
+[[Далее-&gt;Комната 1]]</tw-passagedata><tw-passagedata pid="83" name="Untitled Passage" tags="" position="275,650" size="100,100">(if: (passage:)&#39;s name is &quot;&quot;)[\
+     (set: $playSound to false)
+&lt;script&gt;
+setup.audio.pause();
+&lt;/script&gt;
+]
+(else:)[(set: $playSound to true)]
+
+(if: $playSound)[
+&lt;script&gt;
+window.setup = window.setup || {};
+
+setup.audio = document.createElement(&#39;audio&#39;);
+setup.audio.src = &#39;https://github.com/NetyNormNukov/NetyNormNukov/blob/main/music/emb.mp3&#39;;
+setup.audio.loop = true;
+setup.audio.play();
+&lt;/script&gt;
+]</tw-passagedata><tw-passagedata pid="84" name="Попались" tags="" position="1025,900" size="100,100">(t8n: &quot;slide-right&quot;)+(t8n-delay:2s)[Опа, попались, милюзга!]
+Побег не увенчался успехом. Ну всё, хэппи энда не будет, квест усьо(
+[[Закончить игру с позором-&gt;Директор дает задание]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
